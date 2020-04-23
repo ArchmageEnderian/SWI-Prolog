@@ -1,4 +1,4 @@
-ili_mn(A,B,Fin):-prov(A,B,Fin,[]).
+ili_mn(A,B,Fin):-prov(A,B,Fin1,[]), prov(B,A,Fin2,[]), append(Fin1, Fin2, Fin), !.
 prov([],_,Fin, Fin):-!.
 prov([Q|T],B,Fin,WR):- prov2(Q,B,Fin),append(WR,[Q],WR1),prov(T,B,Fin,WR1).
 prov([_|T],B,Fin,WR):-prov(T,B,Fin,WR).
