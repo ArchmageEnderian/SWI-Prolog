@@ -4,22 +4,22 @@ r_str(X,A,B):-append(B,[X],B1),get0(X1),r_str(X1,A,B1).
 
 
 :-dynamic high/2.
-high_r(X,Y):-repeat,(high(X,Y) -> (nl,write(X), nl, write(Y), write("."), retract(high(X,Y))); X=nil, Y=nil).
+high_r(X,Y):-repeat,(high(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(high(X,Y))); X=nil, Y=nil).
 
-pr_h_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/high.txt'), high_r(X,_), X=nil, told.
-pr_h_s:-see('d:/GitHub/SWI-Prolog/1st.txt'), get0(Sym), read_high(Sym), seen.
+pr_h_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/high.txt'), high_r(X,_), X=nil, told.       /*запись*/
+pr_h_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/high.txt'), get0(Sym), read_high(Sym), seen. /*чтение*/
 
 read_high(-1):-!.
 read_high(_):-read_str(Lang), name(X,Lang),read(Y),asserta(high(X,Y)), get0(Sym),read_high(Sym).
 
 
 :-dynamic dec1/2.
-decl_r(X,Y):-	repeat, (dec1(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(dec1(X,Y))) ;X=nil,Y=nil).
+decl_r(X,Y):-repeat,(dec1(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(dec1(X,Y))) ;X=nil,Y=nil).
 
-pr_d_t:-tell('c:/Prolog/29_2_prolog_F/222.txt'),decl_r(X,_),X=nil,told.
-pr_d_s:-see('c:/Prolog/29_2_prolog_F/222.txt'),get0(Sym),read_high1(Sym),seen.
+pr_d_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/decl.txt'),decl_r(X,_),X=nil,told.
+pr_d_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/decl.txt'), get0(Sym), read_high1(Sym),seen.
 read_high1(-1):-!.
-read_high1(_):-	read_str1(Lang),name(X,Lang),read(Y),asserta(dec1(X,Y)),
+read_high1(_):-	read_str(Lang),name(X,Lang),read(Y),asserta(dec1(X,Y)),
 				get0(Sym),read_high1(Sym).
 
 
@@ -109,10 +109,14 @@ question7(X7):-	write("Is your language for mobile phones?"),nl,
 
 
 
-pr:-question1(X1),question2(X2),question3(X3),question4(X4),question5(X5),question6(X6),question7(X7),
-   (high(X,X1),decl(X,X2),interpret(X,X3),oop(X,X4),cross(X,X5),visual(X,X6),mobile(X,X7)) -> (write(X),!);
-   write("’орошо, ты мен€ победил. я сдаюсь!\n¬ведите загаданного персонажа"),read(Q), asserta(high(Q,X1)).
+aki:-pr_h_s,pr_d_s, question1(X1),question2(X2),question3(X3),question4(X4),question5(X5),question6(X6),question7(X7),
+    prov(X1,X2,X3,X4,X5,X6,X7).
 
+prov(X1,X2,X3,X4,X5,X6,X7):-otvet(X1,X2,X3,X4,X5,X6,X7),!.
+prov(X1,X2,X3,X4,X5,X6,X7):-add(X1,X2,X3,X4,X5,X6,X7),!.
+
+otvet(X1,X2,X3,X4,X5,X6,X7):-high(X,X1),dec1(X,X2),interpret(X,X3),oop(X,X4),cross(X,X5),visual(X,X6),mobile(X,X7),write(X),!.
+add(X1,X2,X3,X4,X5,X6,X7):- write("’орошо, ты мен€ победил. я сдаюсь!\n¬ведите загаданного персонажа"),read(Q), asserta(high(Q,X1)).
 
 
 pr_test:-read(X), (X is 1) -> (write("Yes")); write("No").
