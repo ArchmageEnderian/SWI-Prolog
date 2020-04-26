@@ -3,127 +3,122 @@ r_str(10,A,A):-!.
 r_str(X,A,B):-append(B,[X],B1),get0(X1),r_str(X1,A,B1).
 
 
-:-dynamic high/2.
-high_r(X,Y):-repeat,(high(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(high(X,Y))); X=nil, Y=nil).
+:-dynamic pol/2.
+pol_r(X,Y):-repeat,(pol(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(pol(X,Y))); X=nil, Y=nil).
 
-pr_h_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/high.txt'), high_r(X,_), X=nil, told.       /*запись*/
-pr_h_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/high.txt'), get0(Sym), read_high(Sym), seen. /*чтение*/
+pr_p_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/pol.txt'), pol_r(X,_), X=nil, told.       /*запись*/
+pr_p_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/pol.txt'), get0(Sym), read_pol(Sym), seen. /*чтение*/
 
-read_high(-1):-!.
-read_high(_):-read_str(Lang), name(X,Lang),read(Y),asserta(high(X,Y)), get0(Sym),read_high(Sym).
-
-
-:-dynamic dec1/2.
-decl_r(X,Y):-repeat,(dec1(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(dec1(X,Y))) ;X=nil,Y=nil).
-
-pr_d_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/decl.txt'),decl_r(X,_),X=nil,told.
-pr_d_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/decl.txt'), get0(Sym), read_dec1(Sym),seen.
-read_dec1(-1):-!.
-read_dec1(_):- read_str(Lang),name(X,Lang),read(Y),asserta(dec1(X,Y)),get0(Sym),read_dec1(Sym).
+read_pol(-1):-!.
+read_pol(_):-read_str(Lang), name(X,Lang),read(Y),asserta(pol(X,Y)), get0(Sym),read_pol(Sym).
 
 
-:-dynamic interpret/2.
-interpret_r(X,Y):-repeat,(interpret(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(interpret(X,Y))); X=nil, Y=nil).
+:-dynamic popad/2.
+popad_r(X,Y):-repeat,(popad(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(popad(X,Y))) ;X=nil,Y=nil).
 
-pr_in_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/interpret.txt'), interpret_r(X,_), X=nil, told.       /*запись*/
-pr_in_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/interpret.txt'), get0(Sym), read_interpret(Sym), seen. /*чтение*/
+pr_pop_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/popad.txt'),popad_r(X,_),X=nil,told.
+pr_pop_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/popad.txt'), get0(Sym), read_popad(Sym),seen.
 
-read_interpret(-1):-!.
-read_interpret(_):-read_str(Lang), name(X,Lang),read(Y),asserta(interpret(X,Y)), get0(Sym),read_interpret(Sym).
-
-
-:-dynamic oop/2.
-oop_r(X,Y):-repeat,(oop(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(oop(X,Y))); X=nil, Y=nil).
-
-pr_oop_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/oop.txt'), oop_r(X,_), X=nil, told.       /*запись*/
-pr_oop_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/oop.txt'), get0(Sym), read_oop(Sym), seen. /*чтение*/
-
-read_oop(-1):-!.
-read_oop(_):-read_str(Lang), name(X,Lang),read(Y),asserta(oop(X,Y)), get0(Sym),read_oop(Sym).
+read_popad(-1):-!.
+read_popad(_):- read_str(Lang),name(X,Lang),read(Y),asserta(popad(X,Y)),get0(Sym),read_popad(Sym).
 
 
-:-dynamic cros/2.
-cross_r(X,Y):-repeat,(cros(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(cros(X,Y))); X=nil, Y=nil).
+:-dynamic garem/2.
+garem_r(X,Y):-repeat,(garem(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(garem(X,Y))); X=nil, Y=nil).
 
-pr_cr_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/cross.txt'), cross_r(X,_), X=nil, told.       /*запись*/
-pr_cr_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/cross.txt'), get0(Sym), read_cross(Sym), seen. /*чтение*/
+pr_gar_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/garem.txt'), garem_r(X,_), X=nil, told.       /*запись*/
+pr_gar_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/garem.txt'), get0(Sym), read_garem(Sym), seen. /*чтение*/
 
-read_cross(-1):-!.
-read_cross(_):-read_str(Lang), name(X,Lang),read(Y),asserta(cros(X,Y)), get0(Sym),read_cross(Sym).
-
-
-:-dynamic visual/2.
-visual_r(X,Y):-repeat,(visual(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(visual(X,Y))); X=nil, Y=nil).
-
-pr_vi_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/visual.txt'), visual_r(X,_), X=nil, told.       /*запись*/
-pr_vi_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/visual.txt'), get0(Sym), read_visual(Sym), seen. /*чтение*/
-
-read_visual(-1):-!.
-read_visual(_):-read_str(Lang), name(X,Lang),read(Y),asserta(visual(X,Y)), get0(Sym),read_visual(Sym).
+read_garem(-1):-!.
+read_garem(_):-read_str(Lang), name(X,Lang),read(Y),asserta(garem(X,Y)), get0(Sym),read_garem(Sym).
 
 
-:-dynamic mobile/2.
-mobile_r(X,Y):-repeat,(mobile(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(mobile(X,Y))); X=nil, Y=nil).
+:-dynamic power/2.
+power_r(X,Y):-repeat,(power(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(power(X,Y))); X=nil, Y=nil).
 
-pr_mo_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/mobile.txt'), mobile_r(X,_), X=nil, told.       /*запись*/
-pr_mo_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/mobile.txt'), get0(Sym), read_mobile(Sym), seen. /*чтение*/
+pr_pow_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/power.txt'), power_r(X,_), X=nil, told.       /*запись*/
+pr_pow_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/power.txt'), get0(Sym), read_power(Sym), seen. /*чтение*/
 
-read_mobile(-1):-!.
-read_mobile(_):-read_str(Lang), name(X,Lang),read(Y),asserta(mobile(X,Y)), get0(Sym),read_mobile(Sym).
+read_power(-1):-!.
+read_power(_):-read_str(Lang), name(X,Lang),read(Y),asserta(power(X,Y)), get0(Sym),read_power(Sym).
+
+
+:-dynamic gg/2.
+gg_r(X,Y):-repeat,(gg(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(gg(X,Y))); X=nil, Y=nil).
+
+pr_gg_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/gg.txt'), gg_r(X,_), X=nil, told.       /*запись*/
+pr_gg_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/gg.txt'), get0(Sym), read_gg(Sym), seen. /*чтение*/
+
+read_gg(-1):-!.
+read_gg(_):-read_str(Lang), name(X,Lang),read(Y),asserta(gg(X,Y)), get0(Sym),read_gg(Sym).
+
+
+:-dynamic past/2.
+past_r(X,Y):-repeat,(past(X,Y) -> (nl,write(X),nl,write(Y),write("."), retract(past(X,Y))); X=nil, Y=nil).
+
+pr_past_t:-tell('d:/GitHub/SWI-Prolog/Fukinator_lite_data/past.txt'), past_r(X,_), X=nil, told.       /*запись*/
+pr_past_s:-see('d:/GitHub/SWI-Prolog/Fukinator_lite_data/past.txt'), get0(Sym), read_past(Sym), seen. /*чтение*/
+
+read_past(-1):-!.
+read_past(_):-read_str(Lang), name(X,Lang),read(Y),asserta(past(X,Y)), get0(Sym),read_past(Sym).
 
 
 
 
-question1(X1):-	write("Is your language high level?"),nl,
-				write("1. Yes"),nl,
-				write("0. NO"),nl,
+question1(X1):-	write("Ваш персонаж мужского пола?"),nl,
+                                write("0. Нет"),nl,
+				write("1. Да"),nl,
+				write("2. Нельзя точно сказать"),nl,
 				read(X1).
 
-question2(X2):-	write("Is your language declarative?"),nl,
-				write("1. Yes"),nl,
-				write("0. NO"),nl,
+question2(X2):-	write("Ваш персонаж перерождался каким-либо образом?"),nl,
+				write("1. Да"),nl,
+				write("0. Нет"),nl,
 				read(X2).
 
-question3(X3):-	write("Is your language interpret?"),nl,
-				write("1. Yes"),nl,
-				write("0. NO"),nl,
+question3(X3):-	write("У вашего персонажа есть свой гарем?"),nl,
+				write("1. Да"),nl,
+				write("0. Нет"),nl,
 				read(X3).
 
-question4(X4):-	write("Does your language support OOP?"),nl,
-				write("3. It is OOP itself"),nl,
-				write("2. yes"),nl,
-				write("1. yes, but very hard"),nl,
-				write("0. NO"),nl,
+question4(X4):-	write("Ваш персонаж обладает магическими или сверх силами?"),nl,
+				write("1. Да"),nl,
+				write("0. Нет"),nl,
 				read(X4).
 
-question5(X5):-	write("Is your language crossplatformic?"),nl,
-				write("1. Yes"),nl,
-				write("0. NO"),nl,
+question5(X5):-	write("Ваш персонаж является главным героем?"),nl,
+				write("1. Да"),nl,
+				write("0. Нет"),nl,
 				read(X5).
 
-question6(X6):-	write("Does your language support visual interface for user?"),nl,
-				write("3. It is visual itself"),nl,
-				write("2. yes"),nl,
-				write("1. yes, but very hard"),nl,
-				write("0. NO"),nl,
+question6(X6):-	write("У вашего персонажа трагическое прошлое?"),nl,
+				write("1. Да"),nl,
+				write("0. Нет"),nl,
 				read(X6).
 
-question7(X7):-	write("Is your language for mobile phones?"),nl,
+/*question7(X7):-	write(""),nl,
 				write("1. Yes"),nl,
 				write("0. NO"),nl,
-				read(X7).
+				read(X7).*/
 
 
 
-aki:-pr_h_s, pr_d_s, pr_in_s, pr_oop_s, pr_oop_s, pr_vi_s, pr_mo_s,
-    question1(X1),question2(X2),question3(X3),question4(X4),question5(X5),question6(X6),question7(X7),
-    prov(X1,X2,X3,X4,X5,X6,X7).
 
-prov(X1,X2,X3,X4,X5,X6,X7):-otvet(X1,X2,X3,X4,X5,X6,X7),!.
-prov(X1,X2,X3,X4,X5,X6,X7):-add(X1,X2,X3,X4,X5,X6,X7),!.
 
-otvet(X1,X2,X3,X4,X5,X6,X7):-high(X,X1),dec1(X,X2),interpret(X,X3),oop(X,X4),cross(X,X5),visual(X,X6),mobile(X,X7),write(X),!.
-add(X1,X2,X3,X4,X5,X6,X7):- write("Хорошо, ты меня победил. Я сдаюсь!\nВведите загаданного персонажа"),read(Q), asserta(high(Q,X1)), asserta(dec1(Q,X2)), asserta(interpret(Q,X3)), asserta(oop(Q,X4)), asserta(cros(Q,X5)), asserta(visual(Q,X6)), asserta(mobile(Q,X7)).
+aki:-pr_p_s, pr_pop_s, pr_gar_s, pr_pow_s, pr_gg_s, pr_past_s,
+    question1(X1),question2(X2),question3(X3),question4(X4),question5(X5),question6(X6),/*question7(X7),*/
+    prov(X1,X2,X3,X4,X5,X6).
+
+prov(X1,X2,X3,X4,X5,X6):-otvet(X1,X2,X3,X4,X5,X6),!.
+prov(X1,X2,X3,X4,X5,X6):-add(X1,X2,X3,X4,X5,X6),!.
+
+otvet(X1,X2,X3,X4,X5,X6):-pol(X,X1),popad(X,X2),garem(X,X3),power(X,X4),gg(X,X5),past(X,X6),write(X),!.
+
+add(X1,X2,X3,X4,X5,X6):- write("Хорошо, ты меня победил. Я сдаюсь!\nВведите загаданного персонажа"),read(Q), asserta(pol(Q,X1)),
+    asserta(popad(Q,X2)), asserta(garem(Q,X3)), asserta(power(Q,X4)), asserta(gg(Q,X5)), asserta(past(Q,X6)), reload,!.
+
+reload:-pr_p_t, pr_pop_t, pr_gar_t, pr_pow_t, pr_gg_t, pr_past_t,
+pr_p_s, pr_pop_s, pr_gar_s, pr_pow_s, pr_gg_s, pr_past_s.
 
 
 pr_test:-read(X), (X is 1) -> (write("Yes")); write("No").
