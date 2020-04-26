@@ -1,0 +1,2 @@
+in_list([El|_],El).
+in_list([_|T],El):-in_list(T,El).
