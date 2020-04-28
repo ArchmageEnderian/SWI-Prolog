@@ -1,5 +1,3 @@
-
-
 read_str(A):-get0(X),r_str(X,A,[]).
 r_str(10,A,A):-!.
 r_str(X,A,B):-append(B,[X],B1),get0(X1),r_str(X1,A,B1).
@@ -107,27 +105,23 @@ question6(X6):-	write("У вашего персонажа трагическое прошлое?"),nl,
 
 
 
-aki:-retractall(pol(X,Y)),retractall(popad(X,Y)),retractall(garem(X,Y)),retractall(power(X,Y)),retractall(gg(X,Y)),
-     retractall(past(X,Y)),
+aki:-pret,
 
     pr_p_s, pr_pop_s, pr_gar_s, pr_pow_s, pr_gg_s, pr_past_s,
 
-    question1(X1),question2(X2),question3(X3),question4(X4),question5(X5),question6(X6),/*question7(X7),*/
-    prov(X1,X2,X3,X4,X5,X6).
+    question1(X1),question2(X2),question3(X3),question4(X4),question5(X5),question6(X6),prov(X1,X2,X3,X4,X5,X6).
 
 prov(X1,X2,X3,X4,X5,X6):-otvet(X1,X2,X3,X4,X5,X6),!.
-prov(X1,X2,X3,X4,X5,X6):-add(X1,X2,X3,X4,X5,X6),!.
+prov(X1,X2,X3,X4,X5,X6):-add(X1,X2,X3,X4,X5,X6).
 
-otvet(X1,X2,X3,X4,X5,X6):-pol(X,X1),popad(X,X2),garem(X,X3),power(X,X4),gg(X,X5),past(X,X6),write(X),!.
+otvet(X1,X2,X3,X4,X5,X6):-pol(X,X1),popad(X,X2),garem(X,X3),power(X,X4),gg(X,X5),past(X,X6),write("Ваш персонаж:\n"),write(X),!.
 
 add(X1,X2,X3,X4,X5,X6):-
     write("Хорошо, ты меня победил. Я сдаюсь!"), nl,
-    write("(Введите Имя (и Фамилию, если известна) персонажа и нажмите ENTER."),
-
-    read_line_to_codes(user_input,Name), name(Q,Name),
-
-    asserta(pol(Q,X1)),   asserta(popad(Q,X2)),asserta(garem(Q,X3)),
-    asserta(power(Q,X4)), asserta(gg(Q,X5)),   asserta(past(Q,X6)),  reload,!.
+    write("(Введите Имя (и Фамилию, если известна) персонажа и нажмите ENTER.)"), nl,get0(Qwqewqr),
+    read_line_to_codes(user_input,Name),
+    name(Q,Name), write(Name),nl,  asserta(pol(Q,X1)),   asserta(popad(Q,X2)),asserta(garem(Q,X3)),asserta(power(Q,X4)),
+    asserta(gg(Q,X5)),asserta(past(Q,X6)),  reload,!.
 
 
 reload:-pr_p_t, pr_pop_t, pr_gar_t, pr_pow_t, pr_gg_t, pr_past_t, pret,
