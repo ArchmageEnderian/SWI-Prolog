@@ -1,35 +1,28 @@
 in_list([El|_],El).
 in_list([_|T],El):-in_list(T,El).
 
+sleva_next(A,B,[C]):-fail.
+sleva_next(A,B,[B|[A|T]]).
+sleva_next(A,B,[_|List]):-sleva_next(A,B,List).
 
-log_zad:- List1[_,_,_],
+sprava_next(A,B,[C]):-fail.
+sprava_next(A,B,[A|[B|T]]).
+sprava_next(A,B,[_|List]):-sprava_next(A,B,List).
+
+
+log_zad:- List1=[_,_,_],
     (
         (in_list(List1,[kuznetsov,tokar,_]);in_list(List1,[kuznetsov,slesar,_]);in_list(List1,[kuznetsov,rezchik,_])),
         (in_list(List1,[tokarev,kuznets,_]);in_list(List1,[tokarev,slesar,_]);in_list(List1,[tokarev,rezchik,_])),
         (in_list(List1,[slesarev,kuznets,_]);in_list(List1,[slesarev,tokar,_]);in_list(List1,[slesarev,rezchik,_])),
-        (in_list(List1,[rezchikov,kuznets,_]);in_list(List1,[rezchikov,tokar,_]);in_list(List1,[rezchikov,slesar,_]))
+        (in_list(List1,[rezchikov,kuznets,_]);in_list(List1,[rezchikov,tokar,_]);in_list(List1,[rezchikov,slesar,_])),
 
 
+        in_list(List1,[kuznetsov,slesar,naprotiv]),in_list(List1,[rezchikov,rezchik,naprotiv]),
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       ),
+        sprava_next(slesarev,_,List1),
+        in_list(List1,[slesarev,tokar,sprava])
+    ),
     write(List1).
 
 
