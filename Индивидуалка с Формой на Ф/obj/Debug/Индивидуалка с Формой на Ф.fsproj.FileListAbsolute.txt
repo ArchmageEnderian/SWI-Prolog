@@ -1,0 +1,25 @@
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.exe.config
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.XML
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.exe
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.pdb
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\FSharp.Core.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\System.ValueTuple.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\FSharp.Core.xml
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\cs\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\de\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\en\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\es\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\fr\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\it\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\ja\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\ko\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\pl\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\pt-BR\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\tr\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка с Формой на Ф.fsprojAssemblyReference.cache
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка с Формой на Ф.fsproj.CopyComplete
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка_с_Формой_на_Ф.exe
+C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка_с_Формой_на_Ф.pdb
