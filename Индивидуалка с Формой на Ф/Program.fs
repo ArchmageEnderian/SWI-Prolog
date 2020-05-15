@@ -4,15 +4,15 @@ open System.Windows.Forms
 let MainForm = new Form(Width = 420, Height = 300, Text = "F# Main Form")
 
 
-let ScrollBar1 = new TrackBar(Top = 50, Maximum = 100, Width = 400)
-let E1M1Button = new Button(Top = 100, Left = 150, Width = 100, Text="У врат Ада")
+let TrackBarForButton = new TrackBar(Top = 50,Minimum = 100, Maximum = 400, Width = 400)
+let E1M1Button = new Button(Top = 100, Width = 100, Text="У врат Ада")
 
-MainForm.Controls.Add(ScrollBar1)
+MainForm.Controls.Add(TrackBarForButton)
 MainForm.Controls.Add(E1M1Button)
 
-let Change _ = E1M1Button.Width <- ScrollBar1.Value
+let Change _ = (E1M1Button.Width <- TrackBarForButton.Value)
+let _ = TrackBarForButton.ValueChanged.Add(Change)
 
-let _ = MainForm.Controls.Add(E1M1Button)
 
 
 [<EntryPoint>]
