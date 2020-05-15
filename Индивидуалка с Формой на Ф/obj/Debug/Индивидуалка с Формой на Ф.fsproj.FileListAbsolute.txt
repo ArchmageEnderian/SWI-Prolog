@@ -23,3 +23,28 @@ C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивиду�
 C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка с Формой на Ф.fsproj.CopyComplete
 C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка_с_Формой_на_Ф.exe
 C:\Users\Игорь\Desktop\универ\Домашка\ЖУж\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка_с_Формой_на_Ф.pdb
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.exe.config
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.XML
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.exe
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\Индивидуалка_с_Формой_на_Ф.pdb
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\FSharp.Core.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\System.ValueTuple.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\FSharp.Core.xml
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\cs\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\de\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\en\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\es\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\fr\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\it\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\ja\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\ko\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\pl\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\pt-BR\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\ru\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\tr\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка с Формой на Ф.fsprojAssemblyReference.cache
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка с Формой на Ф.fsproj.CopyComplete
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка_с_Формой_на_Ф.exe
+D:\GitHub\GitKraken\SWI-Prolog-and-F-Sharp\Индивидуалка с Формой на Ф\obj\Debug\Индивидуалка_с_Формой_на_Ф.pdb
