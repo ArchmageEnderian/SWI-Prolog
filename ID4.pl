@@ -2,7 +2,14 @@ permute([],[]).
 permute([H|Tail],P):-permute(Tail,T),insert(H,T,P).
 insert(Y,XZ,XYZ):-append(X,Z,XZ),append(X,[Y],XY),append(XY,Z,XYZ).
 
+naprotiv(A,B,[_,A,_,B]).
+naprotiv(B,A,[A,_,B,_]).
+naprotiv(B,A,[_,A,_,B]).
 
+sprava(A,B,[A,B,_,_]).
+sprava(A,B,[_,_,A,B]).
+
+sleva(A,B,L):-sprava(B,A,L).
 
 /*Четыре человека играют в домино. Их фамилии Кузнецов, Токарев, Слесарев и Резчиков.
 Профессия каждого игрока соответствует фамилии одного из других игроков.

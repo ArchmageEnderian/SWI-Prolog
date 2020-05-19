@@ -1,30 +1,6 @@
-naprotiv(A,B,[_,A,_,B]).
-naprotiv(B,A,[A,_,B,_]).
-naprotiv(B,A,[_,A,_,B]).
-
-sprava(A,B,[A,B,_,_]).
-sprava(A,B,[_,_,A,B]).
-
-sleva(A,B,L):-sprava(B,A,L).
-
-insert(Y,XZ,XYZ):-append(X,Z,XZ),append(X,[Y],XY),append(XY,Z,XYZ).
-
 permute([],[]).
 permute([H|Tail],P):-permute(Tail,T),insert(H,T,P).
-
-find(Ans):-
-        permute([kuznecov,tokarev,slesarev,rezchikov],[A,B,C,D]),
-        permute([kuznec,tokar,slesar,rezchik],[Q1,Q2,Q3,Q4]),
-        L=[m(A,Q1),m(B,Q2),m(C,Q3),m(D,Q4)],
-        member(m(S1,kuznec),L),not(S1=kuznecov),
-        member(m(S2,tokar),L),not(S2=tokarev),
-        member(m(S3,slesar),L),not(S3=slesarev),
-        member(m(S4,rezchik),L),
-        Surnames=[A,B,C,D],
-        naprotiv(kuznecov,S3,Surnames),
-        sprava(slesarev,S2,Surnames),
-        naprotiv(rezchikov,S4,Surnames),
-        sleva(Ans,S1,Surnames).
+insert(Y,XZ,XYZ):-append(X,Z,XZ),append(X,[Y],XY),append(XY,Z,XYZ).
 
 
 
