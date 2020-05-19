@@ -9,6 +9,10 @@ pr_p_s:- read_line_to_codes(user_input,Name), see('D:/GitHub/GitKraken/SWI-Prolo
 reading_starter(K,Name):-get0(Q),read_pol(Q, Name, K).
 
 read_pol(-1, _,K):-write(K), !.
-read_pol(_, Name,K):-read_str(Lang),/*perestanova(Name,Lang),*/ K1 is K+1, get0(X), read_pol(X,Name, K1).
+read_pol(_, Name,K):-read_str(Lang),perestanovka(Name,Lang), K1 is K+1, get0(X), read_pol(X,Name, K1).
 read_pol(_,Name,K):-get0(X), read_pol(X, Name,K).
 
+perestanovka(Name, Lang):-per(Lang, P),sublist(P,Name).
+
+per([],[]).
+per([H|T], P):-per(T,T1),append([H], T1, P).
