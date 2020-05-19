@@ -1,29 +1,30 @@
-in_list([El|_],El).
-in_list([_|T],El):-in_list(T,El).
+naprotiv(A,B,[_,A,_,B]).
+naprotiv(B,A,[A,_,B,_]).
+naprotiv(B,A,[_,A,_,B]).
 
-sleva_next(A,B,[C]):-fail.
-sleva_next(A,B,[B|[A|T]]).
-sleva_next(A,B,[_|List]):-sleva_next(A,B,List).
+sprava(A,B,[A,B,_,_]).
+sprava(A,B,[_,_,A,B]).
 
-sprava_next(A,B,[C]):-fail.
-sprava_next(A,B,[A|[B|T]]).
-sprava_next(A,B,[_|List]):-sprava_next(A,B,List).
+sleva(A,B,L):-sprava(B,A,L).
 
+insert(Y,XZ,XYZ):-append(X,Z,XZ),append(X,[Y],XY),append(XY,Z,XYZ).
 
-log_zad:- List1=[_,_,_],
-    (
-        (in_list(List1,[kuznetsov,tokar,_]);in_list(List1,[kuznetsov,slesar,_]);in_list(List1,[kuznetsov,rezchik,_])),
-        (in_list(List1,[tokarev,kuznets,_]);in_list(List1,[tokarev,slesar,_]);in_list(List1,[tokarev,rezchik,_])),
-        (in_list(List1,[slesarev,kuznets,_]);in_list(List1,[slesarev,tokar,_]);in_list(List1,[slesarev,rezchik,_])),
-        (in_list(List1,[rezchikov,kuznets,_]);in_list(List1,[rezchikov,tokar,_]);in_list(List1,[rezchikov,slesar,_])),
+permute([],[]).
+permute([H|Tail],P):-permute(Tail,T),insert(H,T,P).
 
-
-        in_list(List1,[kuznetsov,slesar,naprotiv]),in_list(List1,[rezchikov,rezchik,naprotiv]),
-
-        sprava_next(slesarev,_,List1),
-        in_list(List1,[slesarev,tokar,sprava])
-    ),
-    write(List1).
+find(Ans):-
+        permute([kuznecov,tokarev,slesarev,rezchikov],[A,B,C,D]),
+        permute([kuznec,tokar,slesar,rezchik],[Q1,Q2,Q3,Q4]),
+        L=[m(A,Q1),m(B,Q2),m(C,Q3),m(D,Q4)],
+        member(m(S1,kuznec),L),not(S1=kuznecov),
+        member(m(S2,tokar),L),not(S2=tokarev),
+        member(m(S3,slesar),L),not(S3=slesarev),
+        member(m(S4,rezchik),L),
+        Surnames=[A,B,C,D],
+        naprotiv(kuznecov,S3,Surnames),
+        sprava(slesarev,S2,Surnames),
+        naprotiv(rezchikov,S4,Surnames),
+        sleva(Ans,S1,Surnames).
 
 
 
