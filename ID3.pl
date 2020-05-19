@@ -14,5 +14,8 @@ read_pol(_,Name,K):-get0(X), read_pol(X, Name,K).
 
 perestanovka(Name, Lang):-per(Lang, P),sublist(P,Name).
 
-per([],[]).
-per([H|T], P):-per(T,T1),append([H], T1, P).
+per1([],[]).
+per1(L,[H|T]):-sel(H,L,T1),per1(T1,T).
+
+sel(H,[H|T],T).
+sel(H,[Y|T],[Y|T1]):-sel(H,T,T1).
