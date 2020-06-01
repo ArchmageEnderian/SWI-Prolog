@@ -1,21 +1,30 @@
 ﻿open System
 
+let rec UdalenitNuli list =
+    if (list = []) then
+        []
+    else
+        match (List.head list) with
+            |0 -> UdalenitNuli (List.tail list)
+            |_ -> list
+
 let prov x y =
     let rec delenie (x: int) (y: int) list =
-        let modd = x % y
         let div = x / y
+        let modd = x % y
         let modlist = div :: list
         if (List.length list = 1000) then
-            []
+            0
         else
             if (modd = 0) then
-                modlist
+                0
             else
-                match List.tryFindIndex (fun x -> x = div) list with
+                let Nuli = UdalenitNuli list
+                match List.tryFindIndex (fun x -> x = div) Nuli with
                 |None -> delenie (modd*10) y modlist
-                |_ -> [1;2;3;4;5]
+                |Some value -> value + 1
                 
-    printf "%A" (delenie 1 16 [])        
+    printf "%A" (delenie 1 7 [])        
 
 [<EntryPoint>]
 let main argv =
