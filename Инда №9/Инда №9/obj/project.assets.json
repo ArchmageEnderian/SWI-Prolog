@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Университет\\Инда №9\\Инда №9\\Инда №9.fsproj",
+      "projectUniqueName": "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\Инда №9\\Инда №9\\Инда №9.fsproj",
       "projectName": "Инда №9",
-      "projectPath": "D:\\Университет\\Инда №9\\Инда №9\\Инда №9.fsproj",
+      "projectPath": "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\Инда №9\\Инда №9\\Инда №9.fsproj",
       "packagesPath": "C:\\Users\\Enderian\\.nuget\\packages\\",
-      "outputPath": "D:\\Университет\\Инда №9\\Инда №9\\obj\\",
+      "outputPath": "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\Инда №9\\Инда №9\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Enderian\\AppData\\Roaming\\NuGet\\NuGet.Config",

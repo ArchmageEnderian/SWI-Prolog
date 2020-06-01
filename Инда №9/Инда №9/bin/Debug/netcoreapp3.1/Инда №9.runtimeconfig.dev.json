@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Enderian\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Enderian\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\Инда №9.exe
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\Инда №9.deps.json
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\Инда №9.runtimeconfig.json
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\Инда №9.runtimeconfig.dev.json
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\Инда №9.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\Инда №9.pdb
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\FSharp.Core.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\cs\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\de\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\es\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\fr\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\it\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\ja\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\ko\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\pl\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\pt-BR\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\ru\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\tr\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\zh-Hans\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\bin\Debug\netcoreapp3.1\zh-Hant\FSharp.Core.resources.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.fsprojAssemblyReference.cache
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.AssemblyInfoInputs.cache
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.AssemblyInfo.fs
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.fsproj.CopyComplete
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.dll
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.pdb
+D:\GitKraken\SWI-Prolog-and-F-Sharp\Инда №9\Инда №9\obj\Debug\netcoreapp3.1\Инда №9.genruntimeconfig.cache
