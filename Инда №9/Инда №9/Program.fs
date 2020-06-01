@@ -1,32 +1,47 @@
 ﻿open System
 
-let rec UdalenitNuli list =
-    if (list = []) then
+let rec UdalenitNuli  list1 =
+    if (list1 = []) then
         []
     else
-        match (List.head list) with
-            |0 -> UdalenitNuli (List.tail list)
-            |_ -> list
+        match (List.head list1) with
+            |0 -> UdalenitNuli  (List.tail list1)
+            |_ -> list1
 
 let prov x y =
-    let rec delenie (x: int) (y: int) list =
-        let div = x / y
+    let rec delenie (x: int) (y: int) mainlist =
         let modd = x % y
-        let modlist = div :: list
-        if (List.length list = 1000) then
+        let div  = x / y
+        let divlist = div :: mainlist
+
+        if (List.length mainlist = 1000) then
             0
         else
             if (modd = 0) then
                 0
             else
-                let Nuli = UdalenitNuli list
-                match List.tryFindIndex (fun x -> x = div) Nuli with
-                |None -> delenie (modd*10) y modlist
-                |Some value -> value + 1
-                
-    printf "%A" (delenie 1 7 [])        
+                let Nuli = UdalenitNuli mainlist
+                match List.tryFindIndex (fun x -> x = div ) Nuli with
+                    |None -> delenie (modd*10) y divlist
+                    |Some value -> value + 1
+    delenie x y []
+
+let maximum x y =
+    if (x > y) then
+        x
+    else
+        y
+
+let forOt0do1000  =
+    let rec cycleFor acc y =
+        if (y < 1001) then
+            cycleFor (maximum (prov 1 y) acc) (y+1)
+        else
+            acc
+    
+    cycleFor 0 2
 
 [<EntryPoint>]
 let main argv =
-    let _ = prov 15 2
+    Console.WriteLine("Максимальный цикл: {0}", forOt0do1000 )
     0 // return an integer exit code
