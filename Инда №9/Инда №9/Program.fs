@@ -1,5 +1,6 @@
 ﻿open System
 
+
 let rec UdalenitNuli  list1 =
     if (list1 = []) then
         []
@@ -7,6 +8,7 @@ let rec UdalenitNuli  list1 =
         match (List.head list1) with
             |0 -> UdalenitNuli  (List.tail list1)
             |_ -> list1
+
 
 let prov x y =
     let rec delenie (x: int) (y: int) mainlist =
@@ -26,11 +28,13 @@ let prov x y =
                     |Some value -> value + 1
     delenie x y []
 
+
 let maximum x y =
     if (x > y) then
         x
     else
         y
+
 
 let forOt0do1000  =
     let rec cycleFor acc y =
@@ -40,6 +44,7 @@ let forOt0do1000  =
             acc
     
     cycleFor 0 2
+
 
 [<EntryPoint>]
 let main argv =
