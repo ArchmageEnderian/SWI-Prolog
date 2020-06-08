@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Университет\\Жук\\inda 13\\inda 13\\inda 12.fsproj": {}
+    "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\inda 13\\inda 13\\inda 12.fsproj": {}
   },
   "projects": {
-    "D:\\Университет\\Жук\\inda 13\\inda 13\\inda 12.fsproj": {
+    "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\inda 13\\inda 13\\inda 12.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Университет\\Жук\\inda 13\\inda 13\\inda 12.fsproj",
+        "projectUniqueName": "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\inda 13\\inda 13\\inda 12.fsproj",
         "projectName": "inda 12",
-        "projectPath": "D:\\Университет\\Жук\\inda 13\\inda 13\\inda 12.fsproj",
+        "projectPath": "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\inda 13\\inda 13\\inda 12.fsproj",
         "packagesPath": "C:\\Users\\Enderian\\.nuget\\packages\\",
-        "outputPath": "D:\\Университет\\Жук\\inda 13\\inda 13\\obj\\",
+        "outputPath": "D:\\GitKraken\\SWI-Prolog-and-F-Sharp\\inda 13\\inda 13\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Enderian\\AppData\\Roaming\\NuGet\\NuGet.Config",
